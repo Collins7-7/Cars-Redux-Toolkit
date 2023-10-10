@@ -6,6 +6,7 @@ import {
   removeCar,
 } from "./slices/carsSlice";
 import { formReducer, addName, addCost } from "./slices/formSlice";
+import { reset } from "./actions";
 
 const store = configureStore({
   reducer: {
@@ -14,4 +15,4 @@ const store = configureStore({
   },
 });
 
-export { store, addSearchTerm, addCar, removeCar, addName, addCost };
+export { store, addSearchTerm, addCar, removeCar, addName, addCost, reset };
